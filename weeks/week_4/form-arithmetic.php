@@ -77,6 +77,7 @@ if (isset($_POST['fname'],
     $lattes = $_POST['lattes'];
     $cappucinos = $_POST['cappucinos'];
     $bev = $coffees + $lattes + $cappucinos;
+    $friendly_bev = number_format($bev, 0);
     //nesting an if else statement
     if (empty($fname && $coffees && $lattes && $cappucinos)) {
         echo '<h3>Please fill out the input fields</h3>';
@@ -95,7 +96,7 @@ if (isset($_POST['fname'],
             <li><b>' . $lattes . ' Lattes</b></li>
             <li><b>' . $cappucinos . ' Cappucinos</b></li>
         </ul>
-        <p>Totalling ' . $bev . ' beverages.</p>
+        <p>Totalling ' . $friendly_bev . ' beverages.</p>
 
         </div>
 
