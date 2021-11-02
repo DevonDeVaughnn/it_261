@@ -1,0 +1,196 @@
+/* Styles for main website in it 261 */
+@font-face {
+  font-family: devvyFont;
+  src: url(fonts/sorcha.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: devvyFont;
+  font-size: 1.1em;
+}
+body {
+  background: beige;
+}
+header {
+  overflow: hidden;
+  border-bottom: 1px solid black;
+}
+/* End body and html */
+p {
+  font-size: 0.91em;
+}
+h2 {
+  font-size: 1.45em;
+}
+nav {
+  height: auto;
+  float: right;
+  position: relative;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  float: left;
+  list-style-type: none;
+  margin-top: 130px;
+  margin-left: 15px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 0.85em;
+}
+
+nav li:hover {
+  width: 100px;
+  text-decoration: line-through;
+  background: rgba(230, 170, 104, 0.9);
+  padding: 5px;
+  border-radius: 3px;
+  width: 75px;
+  font-size: 0.9em;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(29, 26, 5, 1);
+}
+nav a:hover {
+  color: rgba(255, 251, 189, 1);
+}
+/* End Nav */
+
+/*our values are based on a 940px grid  580/940*/
+main {
+  width: 61.7%;
+  height: auto;
+  background: rgba(127, 176, 105, 0.4);
+  border-radius: 5px;
+  float: left;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+/* End Main */
+
+aside {
+  width: 36.17%;
+  float: right;
+  height: auto;
+  text-align: center;
+  font-size: 0.85em;
+}
+aside a {
+  color: rgb(75, 24, 15);
+  float: left;
+  border-radius: 6px;
+  border: 1px solid black;
+  width: auto;
+  background: rgba(107, 75, 40, 0.4);
+}
+aside a:hover {
+  color: rgba(29, 26, 5, 1);
+  text-decoration: line-through;
+  background: rgba(107, 75, 40, 0.9);
+  height: 70px;
+}
+
+/* End Aside */
+
+footer {
+  clear: both;
+  height: 50px;
+  line-height: 50px;
+  border-top: 1px dotted #333;
+  bottom: 0;
+  position: fixed;
+  font-size: 0.8em;
+}
+footer ul {
+  float: right;
+}
+footer li {
+  float: left;
+  list-style-type: none;
+  margin-left: 20px;
+}
+/* End Footer */
+
+ul {
+  list-style-type: none;
+}
+/* End ul */
+
+.aside li a {
+  padding: 18px;
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: right;
+  font-size: 1.2em;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  background: rgba(230, 170, 104, 0.5);
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.image:hover {
+  width: 100%;
+  height: auto;
+  background: rgba(230, 170, 104, 0.9);
+  padding: 1px;
+  border: none;
+  border-radius: 4px;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+.current {
+  color: rgba(202, 60, 37, 1);
+  font-weight: bold;
+}
+
+.content {
+  width: 400px;
+  height: auto;
+}
+
+.pink {
+  background: pink;
+}
+
+/* end class section */
+
+#logo {
+  float: left;
+  width: 160px;
+  margin-bottom: 20px;
+}
+#hero {
+  height: 300px;
+  margin-bottom: 20px;
+  background: red;
+}
+
+#wrapper {
+  max-width: 1100px;
+  margin: 20px auto;
+}
+/* End id sections */
