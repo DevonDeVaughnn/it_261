@@ -30,6 +30,7 @@ switch ($today) {
         $quote_headline = '<h2>Bowie Quote for ' . $today . '!</h2>';
         $pic = 'bowie_2.jpg';
         $alt = 'David Bowie';
+        $color = 'maroon';
         $content = '<h4>I\'m just an individual who doesn\'t feel that I need to
         have somebody qualify work in any particular way.
         I\'m working for me.</h4><br><h4><i>60 Minutes</i></h4> ';
@@ -39,6 +40,7 @@ switch ($today) {
         $quote_headline = '<h2>Bowie Quote for ' . $today . '!</h2>';
         $pic = 'bowie_3.jpg';
         $alt = 'Bowie Shushing';
+        $color = 'black';
         $content = '<h4>I needed to sing because nobody else was singing my songs.</h4><br><h4>
         <i>Fresh Air</i></h4>';
         break;
@@ -47,6 +49,7 @@ switch ($today) {
         $quote_headline = '<h2>Bowie Quote for ' . $today . '!</h2>';
         $pic = 'bowie_4.jpg';
         $alt = 'Older Bowie';
+        $color = 'forestgreen';
         $content = '<h4>I\'ve come to the realisation that I have absolutely no idea what I\'m doing half time.</h4><br>
         <h4><i>NME</i></h4>';
         break;
@@ -55,6 +58,7 @@ switch ($today) {
         $quote_headline = '<h2>Bowie Quote for ' . $today . '!</h2>';
         $pic = 'bowie_5.jpg';
         $alt = 'More Bowie';
+        $color = 'gold';
         $content = '<h4>I thrive on mistakes. If I haven\'t made three good mistakes in a week,
         then I\'m not worth anything. You only learn from mistakes.</h4><br><h4><b><i>NME</i></b></h4>';
         break;
@@ -63,6 +67,7 @@ switch ($today) {
         $quote_headline = '<h2>Bowie Quote for ' . $today . '!</h2>';
         $pic = 'bowie_6.jpg';
         $alt = 'Just a little more Bowie';
+        $color = 'grey';
         $content = '<h4>As you get older the questions come down to about two or three. How long?
         And what do I do with the time I\'ve got left?</h4><br><h4><i> New York Times</i></h4>';
         break;
@@ -71,6 +76,7 @@ switch ($today) {
         $quote_headline = '<h2>Bowie Quote for ' . $today . '!</h2>';
         $pic = 'bowie_7.jpg';
         $alt = 'Friday Bowie';
+        $color = 'turquoise';
         $content = '<h4>Make the best of every moment. We\'re not evolving. We\'re not going anywhere.</h4><br><h4><i>Esquire</i></p>';
         break;
 }?>
