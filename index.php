@@ -18,9 +18,9 @@
             <nav>
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">Switch (3)</a></li>
-                    <li><a href="">Troubleshoot (4)</a></li>
-                    <li><a href="">Calculator (5)</a></li>
+                    <li><a href="website/daily.php">Switch (3)</a></li>
+                    <li><a href="weeks/week_4/homework/adder.php"> Troubleshoot (4)</a></li>
+                    <li><a href="weeks/week_5/calculator_hw.php"> Calculator (5)</a></li>
                     <li><a href="">Email (6)</a></li>
                     <li><a href="">Gallery (7)</a></li>
                     <li><a href="">Database (8)</a></li>
@@ -74,7 +74,6 @@
             </ul>
             <p>Week 4:</p>
             <ul>
-                <li><b>Main Assignment: </b> <a href="weeks/week_4/homework/adder.php">Adder</a></li>
                 <li><a href="weeks/week_4/form_1.php">Form 1</a></li>
                 <li><a href="weeks/week_4/form_2.php">Form 2</a></li>
                 <li><a href="weeks/week_4/form_3.php">Form 3</a></li>
@@ -85,7 +84,10 @@
             </ul>
             <p>Week 5:</p>
             <ul>
-                <li><a href="">In Progress</a></li>
+                <li><a href="weeks/week_5/currency1.php">Currency 1</a></li>
+                <li><a href="weeks/week_5/currency2.php">Currency 2</a></li>
+                <li><a href="weeks/week_5/currency3.php">Currency 3</a></li>
+                <li><a href="weeks/week_5/null.php">Null</a></li>
             </ul>
         </aside>
         <div class=" assignment">
