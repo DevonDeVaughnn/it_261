@@ -89,6 +89,13 @@
                 <li><a href="weeks/week_5/currency3.php">Currency 3</a></li>
                 <li><a href="weeks/week_5/null.php">Null</a></li>
             </ul>
+
+            <p>Week 6:</p>
+            <ul>
+                <li><a href="weeks/week_6/form1.php">Form 1</a></li>
+                <li><a href="weeks/week_6/functions.php">Functions</a></li>
+                <li><a href="weeks/week_6/currency3.php">Implode</a></li>
+            </ul>
         </aside>
         <div class=" assignment">
             <h2 class="title">MAMP Install</h2>
