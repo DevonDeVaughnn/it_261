@@ -11,6 +11,9 @@
   font-family: devvyFont;
   font-size: 1.1em;
 }
+html {
+  background: none;
+}
 body {
   background: beige;
 }

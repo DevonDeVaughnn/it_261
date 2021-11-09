@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html class="<?php echo $color; ?>" lang="en">
+<html class="<?php
+if (basename($_SERVER['PHP_SELF']) !== 'daily.php') {
+    echo 'none';
+} else {
+    echo $color;
+}
+
+?>" lang="en">
 
 <head>
     <meta charset="UTF-8" />
