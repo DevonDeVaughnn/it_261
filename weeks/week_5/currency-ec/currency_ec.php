@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Extra Credit</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style2.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -78,7 +78,7 @@
 }?>>Mattress</option>
 
             </select>
-            <input type="submit" value="Convert it">
+            <input type="submit" id="button" value="Convert it">
             <p><a href="">Reset</a></p>
         </fieldset>
     </form>
