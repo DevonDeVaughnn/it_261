@@ -211,9 +211,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <span class="error">
                     <?php echo $age_error; ?>
                 </span>
-                <label for="comments">Comments</label>
-                <textarea
-                    name="comments"><?php if (isset($_POST['comments'])) {echo htmlspecialchars($_POST['comments']);}?></textarea>
+                <label for="comments"></label>
+                <textarea name="comments"
+                    placeholder="Leave a comment"><?php if (isset($_POST['comments'])) {echo htmlspecialchars($_POST['comments']);}?></textarea>
                 <span class="error">
                     <?php echo $comments_error; ?>
                 </span>
