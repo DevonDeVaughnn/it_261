@@ -1,4 +1,6 @@
 <?php
+include 'config.php';
+include 'includes/header.php';
 
 $username = '';
 $email = '';
@@ -126,106 +128,107 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 ?>">
-                <div>
-                    <!-- sticky -->
+            </div>
 
-                    <span class="error">
-                        <?php echo $username_error; ?>
-                    </span>
+            <!-- sticky -->
 
-                    <div><label for="email">Email</label>
-                        <input type="email" name="email" value="<?php if (isset($_POST['email'])) {
+            <span class="error">
+                <?php echo $username_error; ?>
+            </span>
+
+            <div><label for="email">Email</label>
+                <input type="email" name="email" value="<?php if (isset($_POST['email'])) {
     echo htmlspecialchars($_POST['email']);
 }
 
 ?>">
-                    </div>
-                    <span class="error">
-                        <?php echo $email_error; ?>
-                    </span>
+            </div>
+            <span class="error">
+                <?php echo $email_error; ?>
+            </span>
 
-                    <div><label for="phone">Phone Number</label>
-                        <input type="text" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if (isset($_POST['phone'])) {
+            <div><label for="phone">Phone Number</label>
+                <input type="text" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if (isset($_POST['phone'])) {
     echo htmlspecialchars($_POST['phone']);
 
 }
 
 ?>">
-                    </div>
+            </div>
 
-                    <span class="error">
-                        <?php echo $phone_Err; ?>
-                    </span>
-
-
-
-                    <span class="error">
-                        <?php echo $age_error; ?>
-                    </span>
-
-                    <div><label for="song">Favorite Songs</label>
+            <span class="error">
+                <?php echo $phone_Err; ?>
+            </span>
 
 
-                        <ul>
-                            <li><input type="checkbox" name="song[]" value="song_1" <?php if (isset($_POST['song']) && in_array('song_1', $song)) {
+
+            <span class="error">
+                <?php echo $age_error; ?>
+            </span>
+
+            <div><label for="song">Favorite Songs</label>
+
+
+                <ul>
+                    <li><input type="checkbox" name="song[]" value="song_1" <?php if (isset($_POST['song']) && in_array('song_1', $song)) {
     echo 'checked="checked"';
 }
 ?>>Song 1</li>
-                            <li><input type="checkbox" name="song[]" value="song_2" <?php if (isset($_POST['song']) && in_array('song_2', $song)) {
+                    <li><input type="checkbox" name="song[]" value="song_2" <?php if (isset($_POST['song']) && in_array('song_2', $song)) {
     echo 'checked="checked"';
 }?>>Song 2</li>
-                            <li><input type="checkbox" name="song[]" value="song_3" <?php if (isset($_POST['song']) && in_array('song_3', $song)) {
+                    <li><input type="checkbox" name="song[]" value="song_3" <?php if (isset($_POST['song']) && in_array('song_3', $song)) {
     echo 'checked="checked"';
 }?>>Song 3</li>
-                            <li><input type="checkbox" name="song[]" value="song_4" <?php if (isset($_POST['song']) && in_array('song_4', $song)) {
+                    <li><input type="checkbox" name="song[]" value="song_4" <?php if (isset($_POST['song']) && in_array('song_4', $song)) {
     echo 'checked="checked"';
 }?>>Song 4</li>
-                            <li><input type="checkbox" name="song[]" value="song_5" <?php if (isset($_POST['song']) && in_array('song_5', $song)) {
+                    <li><input type="checkbox" name="song[]" value="song_5" <?php if (isset($_POST['song']) && in_array('song_5', $song)) {
     echo 'checked="checked"';
 }?>>Song 5</li>
-                        </ul>
-                    </div>
-                    <span class="error">
-                        <?php echo $song_error; ?>
-                    </span>
-                    <label for="age">Age</label>
-                    <select name="age" id="">
-                        <option value="" NULL <?php if (isset($_POST['age']) && $_POST['age'] == null) {
+                </ul>
+            </div>
+            <span class="error">
+                <?php echo $song_error; ?>
+            </span>
+            <label for="age">Age</label>
+            <select name="age" id="">
+                <option value="" NULL <?php if (isset($_POST['age']) && $_POST['age'] == null) {
     echo 'selected="unselected"';
 }?>>Select One</option>
-                        <option value="12-18" <?php if (isset($_POST['age']) && $_POST['age'] == '12-18') {
+                <option value="12-18" <?php if (isset($_POST['age']) && $_POST['age'] == '12-18') {
     echo 'selected="unselected"';
 }?>> 12-18</option>
-                        <option value="18-24" <?php if (isset($_POST['age']) && $_POST['age'] == '18-24') {
+                <option value="18-24" <?php if (isset($_POST['age']) && $_POST['age'] == '18-24') {
     echo 'selected="unselected"';
 }?>> 18-24</option>
-                        <option value="25-34" <?php if (isset($_POST['age']) && $_POST['age'] == '25-34') {
+                <option value="25-34" <?php if (isset($_POST['age']) && $_POST['age'] == '25-34') {
     echo 'selected="unselected"';
 }?>> 25-34</option>
-                        <option value="35-49" <?php if (isset($_POST['age']) && $_POST['age'] == '35-49') {
+                <option value="35-49" <?php if (isset($_POST['age']) && $_POST['age'] == '35-49') {
     echo 'selected="unselected"';
 }?>>50+</option>
-                        <span class="error">
-                            <?php echo $age_error; ?>
-                        </span>
-                        <label for="comments">Comments</label>
-                        <textarea
-                            name="comments"><?php if (isset($_POST['comments'])) {echo htmlspecialchars($_POST['comments']);}?></textarea>
-                        <span class="error">
-                            <?php echo $comments_error; ?>
-                        </span>
-                        <label for="privacy">Privacy</label>
-                        <ul>
-                            <li><input type="radio" name="privacy" value="agree" <?php if (isset($_POST['privacy']) && $_POST['privacy'] == 'agree') {
+                <span class="error">
+                    <?php echo $age_error; ?>
+                </span>
+                <label for="comments">Comments</label>
+                <textarea
+                    name="comments"><?php if (isset($_POST['comments'])) {echo htmlspecialchars($_POST['comments']);}?></textarea>
+                <span class="error">
+                    <?php echo $comments_error; ?>
+                </span>
+                <label for="privacy">Privacy</label>
+                <ul>
+                    <li><input type="radio" name="privacy" value="agree" <?php if (isset($_POST['privacy']) && $_POST['privacy'] == 'agree') {
     echo 'checked="checked"';
 }
 ?>>I agree!</li>
-                        </ul>
-                        <span class="error">
-                            <?php echo $privacy_error; ?> </span>
-                        <input type="submit" value="Send It">
-                        <p><a href="">Reset</a></p>
-                    </select>
+                </ul>
+                <span class="error">
+                    <?php echo $privacy_error; ?> </span>
+                <input type="submit" value="Send It">
+                <p><a href="">Reset</a></p>
+            </select>
         </fieldset>
     </form>
 </body>
