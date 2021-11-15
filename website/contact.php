@@ -157,7 +157,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
 
             <span class="error">
-                <?php echo $phone_Err; ?>
+                <?php echo $phone_error; ?>
             </span>
 
 
