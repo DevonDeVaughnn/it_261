@@ -167,6 +167,11 @@ option {
   margin-bottom: 10px;
   font-family: "Courier New", Courier, monospace;
 }
+
+#send {
+  text-align: center;
+}
+
 /* End Form */
 
 footer {

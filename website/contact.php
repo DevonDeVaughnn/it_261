@@ -226,8 +226,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </ul>
                 <span class="error">
                     <?php echo $privacy_error; ?> </span>
-                <input type="submit" value="Send It">
-                <p><a href="">Reset</a></p>
+                <div id="send"> <input type="submit" value="Send It">
+                    <p><a href="">Reset</a></p>
+                </div>
             </select>
         </fieldset>
     </form>
