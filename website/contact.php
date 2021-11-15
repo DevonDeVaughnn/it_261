@@ -16,7 +16,7 @@ $email_error = '';
 $age_error = '';
 $song_error = '';
 $comments_error = '';
-$phones_Err = '';
+$phone_error = '';
 $privacy_error = '';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     if (empty($_POST['phone'])) {
         // if empty, type in your number
-        $phone_Err = 'Your phone number please!';
+        $phone_error = 'Your phone number please!';
     } elseif (array_key_exists('phone', $_POST)) {
         if (!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])) {
             // if you are not typing the requested format of xxx-xxx-xxxx, display Invalid format
