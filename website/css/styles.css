@@ -82,6 +82,16 @@ main {
   justify-content: center;
   border: 1px solid black;
 }
+#thx-main {
+  width: 100%;
+  height: auto;
+  background: rgba(98, 84, 219, 0.4);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
 /* End Main */
 
 aside {
@@ -107,6 +117,47 @@ aside a:hover {
 }
 
 /* End Aside */
+
+#contact-body {
+  display: block;
+  width: 600px;
+  text-align: left;
+  background: aqua;
+  margin: 20px auto;
+  font-size: medium;
+}
+#contact-body li {
+  font-family: "Courier New", Courier, monospace;
+}
+
+fieldset {
+  display: table;
+}
+fieldset p {
+  display: table-row;
+}
+fieldset label {
+  display: table-cell;
+  text-decoration: underline;
+}
+
+label {
+  display: block;
+  clear: left;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8em;
+  width: 60%;
+  margin: 15px;
+}
+select {
+  margin-bottom: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+option {
+  margin-bottom: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+/* End Form */
 
 footer {
   clear: both;
@@ -214,4 +265,5 @@ ul {
   max-width: 1100px;
   margin: 20px auto;
 }
+
 /* End id sections */

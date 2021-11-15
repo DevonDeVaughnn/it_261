@@ -92,7 +92,7 @@
 
             <p>Week 6:</p>
             <ul>
-                <li><a href="weeks/week_6/form1.php">Form 1</a></li>
+                <li><a href="weeks/week_6/form1.php">Emailable Form 1</a></li>
                 <li><a href="weeks/week_6/functions.php">Functions</a></li>
                 <li><a href="weeks/week_6/currency3.php">Implode</a></li>
             </ul>
