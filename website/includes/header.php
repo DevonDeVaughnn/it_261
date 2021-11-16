@@ -19,7 +19,7 @@ if (basename($_SERVER['PHP_SELF']) !== 'daily.php') {
 <body class="<?php echo $body; ?>">
     <header class="header">
         <div class="header-inner">
-            <a href="index.html"><img src="images/logo.png" alt="logo" id="logo" /></a>
+            <a href="../index.php"><img src="images/logo.png" alt="logo" id="logo" /></a>
             <nav>
                 <ul>
                     <?php echo my_nav($nav); ?>

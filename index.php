@@ -94,15 +94,18 @@
             <ul>
                 <li><a href="weeks/week_6/form1.php">Emailable Form 1</a></li>
                 <li><a href="weeks/week_6/functions.php">Functions</a></li>
-                <li><a href="weeks/week_6/currency3.php">Implode</a></li>
+                <li><a href="weeks/week_6/implode.php">Implode</a></li>
+            </ul>
+            <p>Week 7:</p>
+            <ul>
+                <li><a href="weeks/week_7/random.php">Random</a></li>
+                <li><a href="weeks/week_7/strings.php">Substrings and String Replace</a></li>
+                <li><a href="weeks/week_6/pictures.php">Picture Gallery</a></li>
             </ul>
         </aside>
-        <div class=" assignment">
-            <h2 class="title">MAMP Install</h2>
-            <img src="images/assignment1.jpg" alt="assignment1">
-            <h2 class="title">MAMP Error</h2>
-            <img src="images/error.png" alt="error">
-
+        <div class="assignment">
+            <h1><a style="color:cornflowerblue;" href="https://github.com/DevonDeVaughnn/it_261">GitHub
+                    Link</a></h1>
 
         </div>
         <footer>

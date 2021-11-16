@@ -1,6 +1,8 @@
 <?php
 include 'config.php';
 include 'includes/header.php';
+$headline = 'Welcome to my Contact Page';
+$image = 'enigma_cover.jpg';
 
 $username = '';
 $email = '';
@@ -107,131 +109,35 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 // End Server method
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devvy Contact Page</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    </link>
-</head>
-
-<body id="contact-body">
-    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
-        <fieldset id="contact-fieldset">
-            <div><label for="username">Username</label>
-                <input type="text" name="username" value="<?php if (isset($_POST['username'])) {
-    echo htmlspecialchars($_POST['username']);
-}
-
-?>">
-            </div>
-
-            <!-- sticky -->
-
-            <span class="error">
-                <?php echo $username_error; ?>
-            </span>
-
-            <div><label for="email">Email</label>
-                <input type="email" name="email" value="<?php if (isset($_POST['email'])) {
-    echo htmlspecialchars($_POST['email']);
-}
-
-?>">
-            </div>
-            <span class="error">
-                <?php echo $email_error; ?>
-            </span>
-
-            <div><label for="phone">Phone Number</label>
-                <input type="text" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if (isset($_POST['phone'])) {
-    echo htmlspecialchars($_POST['phone']);
-
-}
-
-?>">
-            </div>
-
-            <span class="error">
-                <?php echo $phone_error; ?>
-            </span>
+<div id="wrapper">
+    <main>
+        <div>
+            <h2><?php echo $headline; ?></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, rem?
+                Nihil quisquam, culpa aliquam
+                officiis laudantium ad, molestias eligendi
+                provident sapiente sunt at deleniti architecto repellendus vero.
+                Earum, repellat? Eaque ex accusantium impedit vero facilis deleniti
+                similique aut nulla explicabo!
+            </p>
+            <img style="width:300px; height:300px; margin:5px auto; padding:2px; border:4px solid brown;"
+                src="images/<?php echo $image; ?>" alt="<?php echo $alt; ?>">
+        </div>
 
 
+        <div><?php include 'includes/form.php';?></div>
+    </main>
+    <aside>
+        <h3>Aside for our Form</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Nemo, aut perferendis error aspernatur ex nobis
+            consectetur facilis quae magnam natus a totam
+            ullam magni accusamus placeat illo modi quisquam. Aliquam.
+        </p>
+    </aside>
+    <?php include 'includes/footer.php';?>
+</div>
 
-            <span class="error">
-                <?php echo $age_error; ?>
-            </span>
-
-            <div><label for="song">Favorite Songs</label>
-
-
-                <ul>
-                    <li><input type="checkbox" name="song[]" value="song_1" <?php if (isset($_POST['song']) && in_array('song_1', $song)) {
-    echo 'checked="checked"';
-}
-?>>Song 1</li>
-                    <li><input type="checkbox" name="song[]" value="song_2" <?php if (isset($_POST['song']) && in_array('song_2', $song)) {
-    echo 'checked="checked"';
-}?>>Song 2</li>
-                    <li><input type="checkbox" name="song[]" value="song_3" <?php if (isset($_POST['song']) && in_array('song_3', $song)) {
-    echo 'checked="checked"';
-}?>>Song 3</li>
-                    <li><input type="checkbox" name="song[]" value="song_4" <?php if (isset($_POST['song']) && in_array('song_4', $song)) {
-    echo 'checked="checked"';
-}?>>Song 4</li>
-                    <li><input type="checkbox" name="song[]" value="song_5" <?php if (isset($_POST['song']) && in_array('song_5', $song)) {
-    echo 'checked="checked"';
-}?>>Song 5</li>
-                </ul>
-            </div>
-            <span class="error">
-                <?php echo $song_error; ?>
-            </span>
-            <label for="age">Age</label>
-            <select name="age" id="">
-                <option value="" NULL <?php if (isset($_POST['age']) && $_POST['age'] == null) {
-    echo 'selected="unselected"';
-}?>>Select One</option>
-                <option value="12-18" <?php if (isset($_POST['age']) && $_POST['age'] == '12-18') {
-    echo 'selected="unselected"';
-}?>> 12-18</option>
-                <option value="18-24" <?php if (isset($_POST['age']) && $_POST['age'] == '18-24') {
-    echo 'selected="unselected"';
-}?>> 18-24</option>
-                <option value="25-34" <?php if (isset($_POST['age']) && $_POST['age'] == '25-34') {
-    echo 'selected="unselected"';
-}?>> 25-34</option>
-                <option value="35-49" <?php if (isset($_POST['age']) && $_POST['age'] == '35-49') {
-    echo 'selected="unselected"';
-}?>>50+</option>
-                <span class="error">
-                    <?php echo $age_error; ?>
-                </span>
-                <label for="comments"></label>
-                <textarea name="comments"
-                    placeholder="Leave a comment"><?php if (isset($_POST['comments'])) {echo htmlspecialchars($_POST['comments']);}?></textarea>
-                <span class="error">
-                    <?php echo $comments_error; ?>
-                </span>
-                <label for="privacy">Privacy</label>
-                <ul>
-                    <li><input type="radio" name="privacy" value="agree" <?php if (isset($_POST['privacy']) && $_POST['privacy'] == 'agree') {
-    echo 'checked="checked"';
-}
-?>>I agree!</li>
-                </ul>
-                <span class="error">
-                    <?php echo $privacy_error; ?> </span>
-                <div id="send"> <input type="submit" value="Send It">
-                    <p><a href="">Reset</a></p>
-                </div>
-            </select>
-        </fieldset>
-    </form>
-</body>
 
 </html>
