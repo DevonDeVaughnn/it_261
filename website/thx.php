@@ -23,3 +23,4 @@ $headline = 'Thank you for contacting me!'
     </main>
     <aside></aside>
     <?php include 'includes/footer.php';?>
+</div>

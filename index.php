@@ -100,7 +100,12 @@
             <ul>
                 <li><a href="weeks/week_7/random.php">Random</a></li>
                 <li><a href="weeks/week_7/strings.php">Substrings and String Replace</a></li>
-                <li><a href="weeks/week_6/pictures.php">Picture Gallery</a></li>
+                <li><a href="weeks/week_7/pictures.php">Picture Gallery</a></li>
+            </ul>
+            <p>Week 8:</p>
+            <ul>
+                <li><a href="weeks/week_8/people.php">People</a></li>
+
             </ul>
         </aside>
         <div class="assignment">
@@ -114,10 +119,10 @@
                 <li>All Rights Reserved</li>
                 <li><a href="">Terms of use</a></li>
                 <li><a href="">Web Design by Devvy</a></li>
-                <li><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fofr.cgc.mybluehost.me%2Fportal%2F">HTML
+                <li><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fofr.cgc.mybluehost.me%2FIT_261">HTML
                         Validation</a></li>
                 <li><a
-                        href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fofr.cgc.mybluehost.me%2Fportal%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">CSS
+                        href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fofr.cgc.mybluehost.me%2FIT_261&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">CSS
                         Validation</a></li>
             </ul>
         </footer>

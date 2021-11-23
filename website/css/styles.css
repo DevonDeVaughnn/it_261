@@ -235,3 +235,23 @@ ul {
 }
 
 /* End id sections */
+
+table,
+th,
+tr {
+  margin: 20px auto;
+  padding: 5px;
+}
+td {
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+td img {
+  margin: 15px auto;
+  border: 3px solid brown;
+}
+table {
+  width: 100%;
+}

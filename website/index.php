@@ -47,6 +47,9 @@ $selected_album = '' . $album[$j] . '';
         <div class="photo">
             <?php echo '<img class="photo" src="images/' . $selected_image . '" alt=" ' . $photos[$i] . '" /> ' . $selected_album . ''; ?>
         </div>
+
     </main>
+
     <aside></aside>
     <?php include 'includes/footer.php';?>
+</div>
