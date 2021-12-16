@@ -1,4 +1,8 @@
 <?php
+
+include 'config.php';
+include 'includes/header.php';
+
 $character['Alucard'] = 'aluca2_Character from Hellsing.';
 $character['Black_Dynamite'] = 'bdyna2_Character from Black Dynamite.';
 $character['Huey_Freeman'] = 'hueyf2_Character from The Boondocks';
@@ -27,23 +31,27 @@ $character['Terry_McGinnis'] = 'mcgin2_Batman from Batman Beyond';
 </head>
 
 <body>
-    <h2 style="text-align:center; padding-top: 15px;">Table of my Favorite Characters</h2>
-    <table>
-        <?php foreach ($character as $name => $image): ?>
-        <tr>
-            <td><img style="display:block;" width="300px" height="300px"
-                    src="images/<?php echo substr($image, 0, 5); ?>.jpg"
-                    alt="<?php echo str_replace('_', ' ', $name); ?>"></td>
-            <td><?php echo '<h3> ' . str_replace('_', ' ', $name) . '</h3>'; ?></td>
-            <td>
-                <?php echo '<h3> ' . substr($image, 7) . '</h3>'; ?></td>
-            <td><img style="display:block;" width="300px" height="300px"
-                    src="images/<?php echo substr($image, 0, 6); ?>.jpg"
-                    alt="<?php echo str_replace('_', ' ', $name); ?>"></td>
-        </tr>
-        <?php endforeach;?>
-    </table>
+    <div id="gallery">
+        <h2>Table of my Favorite Characters</h2>
+        <table>
+            <?php foreach ($character as $name => $image): ?>
+            <tr>
+                <td><img src="images/<?php echo substr($image, 0, 5); ?>.jpg"
+                        alt="<?php echo str_replace('_', ' ', $name); ?>"></td>
+                <td><?php echo '<h3> ' . str_replace('_', ' ', $name) . '</h3>'; ?></td>
+                <td>
+                    <?php echo '<h3> ' . substr($image, 7) . '</h3>'; ?></td>
+                <td><img src="images/<?php echo substr($image, 0, 6); ?>.jpg"
+                        alt="<?php echo str_replace('_', ' ', $name); ?>"></td>
+            </tr>
+            <?php endforeach;?>
+        </table>
+    </div>
+    <div class="footer"> <?php include 'includes/footer.php'?></div>
+
+
 
 </body>
+
 
 </html>

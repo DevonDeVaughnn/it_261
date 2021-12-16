@@ -1,6 +1,11 @@
 <?php
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
+ob_start();
+define('DEBUG', 'TRUE');
+
+include 'credentials.php';
+
 $nav['index.php'] = 'Home';
 $nav['about.php'] = 'About';
 $nav['daily.php'] = 'Daily';
@@ -148,4 +153,17 @@ switch ($today) {
         $content = '<h4>Make the best of every moment. We\'re not evolving. We\'re not going anywhere.</h4><br>
     <h4><i>Esquire</i></p>';
         break;
+
+        function myError($myFile, $myLine, $errorMsg)
+    {
+            if (defined('DEBUG') && DEBUG) {
+                echo 'Error in file: <b> ' . $myFile . ' </b>
+                on line: <b> ' . $myLine . ' </b>';
+                echo 'Error message: <b> ' . $errorMsg . '</b>';
+                die();
+            } else {
+                echo 'Houston, we have a problem!';
+                die();
+            }
+        }
 }
