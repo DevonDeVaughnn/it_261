@@ -14,7 +14,7 @@ if (isset($_GET['logout'])) {
     header('Location:login.php');
 }
 
-include('includes/header.php');
+include 'includes/header.php';
 
 if (isset($_SESSION['success'])): ?>
 
@@ -26,14 +26,16 @@ unset($_SESSION['success']) ?></h3>
 
 if (isset($_SESSION['username'])): ?>
 <header>
-<div class="welcome-logout">
-    <h3>Hello <?php echo $_SESSION['username'];?>!</h3>
-    <p><a href="index.php?logout='1'">Logout</a></p>
-</div>
-<!-- end welcome-logout div -->
-<?php endif;?>
+    <div class="welcome-logout">
+        <h3>Hello <?php echo $_SESSION['username']; ?>!</h3>
+        <p><a href="index.php?logout='1'">Logout</a></p>
+    </div>
+    <!-- end welcome-logout div -->
+    <?php endif;?>
 </header>
 <div id="wrapper">
-<h1>Welcome to the home page!</h1>
+    <h1>Welcome to the home page!</h1>
+    <h2><a style="color:cornflowerblue;" href="https://github.com/DevonDeVaughnn/it_261">GitHub
+            Link</a></h2>
 </div>
-<?php include('includes/footer.php');?>
+<?php include 'includes/footer.php';?>

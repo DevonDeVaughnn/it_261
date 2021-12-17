@@ -107,6 +107,11 @@
                 <li><a href="weeks/week_8/people.php">People</a></li>
 
             </ul>
+            <p>Week 9:</p>
+            <ul>
+                <li><a href="weeks/week_9/register.php">Registration</a></li>
+
+            </ul>
         </aside>
         <div class="assignment">
             <h1><a style="color:cornflowerblue;" href="https://github.com/DevonDeVaughnn/it_261">GitHub
