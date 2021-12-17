@@ -5,6 +5,14 @@ define('DEBUG', 'TRUE'); // We want to see our errors
 
 include 'credentials.php';
 
+$first_name = '';
+$last_name = '';
+$email = '';
+$username = '';
+$password = '';
+$success = 'You have successfully logged on!';
+$errors = array();
+
 function myError($myFile, $myLine, $errorMsg)
 {
     if (defined('DEBUG') && DEBUG) {
