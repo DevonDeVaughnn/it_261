@@ -80,7 +80,7 @@ if (isset($_POST['login_user'])) {
         $password = md5($password);
         $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
         $results = mysqli_query($iConn, $query);
-    
+
         if (mysqli_num_rows($results) == 1) {
             $_SESSION['username'] = $username;
             $_SESSION['success'] = $success;
@@ -89,5 +89,5 @@ if (isset($_POST['login_user'])) {
             array_push($errors, 'Wrong username/password combo');
         }
     }
-    
+
 }
